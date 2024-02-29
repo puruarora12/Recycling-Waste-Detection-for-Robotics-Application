@@ -1,0 +1,20 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: zerowaste-f-final/splits_final_deblurred/  # dataset root dir
+train: train/data  # train images (relative to 'path') 128 images
+trainLabel: train/annotation
+trainMasks: train/sem_seg
+
+val: val/data  # val images (relative to 'path') 128 images
+valLabel: val/annotation
+valMasks: val/sem_seg
+
+test: test/data
+testLabel: test/annotation
+testMasks: test/sem_seg
+
+# Classes (80 COCO classes)
+names:
+  0: rigid_plastic
+  1: cardboard
+  2: metal
+  3: soft_plastic
